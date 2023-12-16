@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Player</title>
+</head>
+<body>
+<h1>Enter Youtube Video Id</h1>
+<form method="post" action="/play">
+            {% csrf_token %}
+
+<input type="text" id="video_id" name="video_id">
+<button type="submit">Play</button>
+    </form>
+</body>
